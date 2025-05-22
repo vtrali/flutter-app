@@ -1,4 +1,0 @@
-ffmpeg -i /sdcard/hls/twd-s3b4.mp4 \
--preset veryfast \
--c:v libx264 -vf "scale=-2:480" -crf 26 -c:a aac -b:a 80k \
--hls_time 10 -hls_list_size 0 -f hls /sdcard/hls/twd-s3b4/index.m3u8
